@@ -31,3 +31,11 @@ Estado: En Formacion
 - **Resolución de Problemas**: Creatividad y enfoque práctico para encontrar soluciones en situaciones académicas o de proyectos.
 
 ---
+
+## Idiomas
+
+- Español (Nativo)
+- Inglés (Intermedio-Avanzado)
+- Portugues ( basico )
+
+---
