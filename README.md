@@ -17,3 +17,17 @@ Fecha de Graduación: 2023
 **SENA** 
 
 Estado: En Formacion
+
+---
+
+## Habilidades
+
+- **Pensamiento Crítico**: Capacidad para analizar problemas, interpretar datos y desarrollar conclusiones lógicas.
+
+- **Comunicación:** Escucha activa, empatía, y adaptabilidad.
+
+- **Trabajo en Equipo**: Capacidad para colaborar con otros, compartir ideas y cumplir objetivos en grupo.
+
+- **Resolución de Problemas**: Creatividad y enfoque práctico para encontrar soluciones en situaciones académicas o de proyectos.
+
+---
