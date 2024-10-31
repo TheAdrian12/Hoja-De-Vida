@@ -9,3 +9,11 @@
 **Email:** ajac4183@gmail.com  
 
 ---
+
+## Educación
+**IED Sarid Arteta de vasquez**  
+Fecha de Graduación: 2023 
+
+**SENA** 
+
+Estado: En Formacion
