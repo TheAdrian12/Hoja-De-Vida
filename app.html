@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #111827;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-strong: #0ea5e9;
+      --shadow: 0 25px 50px rgba(15, 23, 42, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 30%),
+                  linear-gradient(180deg, #0f172a 0%, #020617 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      width: min(900px, 100%);
+      background: rgba(15, 23, 42, 0.88);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+    }
+
+    .hero {
+      padding: 3rem 3rem 2rem;
+      display: grid;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .hero-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-title {
+      max-width: 620px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.05;
+      margin-bottom: 1rem;
+    }
+
+    p.lead {
+      max-width: 620px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .tags {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .tag {
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      padding: 0.8rem 1rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      border: 1px solid rgba(56, 189, 248, 0.16);
+    }
+
+    .summary {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .summary-card {
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(148, 163, 184, 0.08);
+      border-radius: 18px;
+      padding: 1.35rem;
+    }
+
+    .summary-card h2 {
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    .summary-card p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    .contact {
+      display: grid;
+      gap: 1rem;
+      padding: 2rem 3rem 3rem;
+      border-top: 1px solid rgba(148, 163, 184, 0.08);
+      background: rgba(15, 23, 42, 0.7);
+    }
+
+    .contact h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-items {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .contact-item {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.08);
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+    }
+
+    .contact-item span {
+      display: block;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+      font-size: 0.88rem;
+    }
+
+    .contact-item strong {
+      color: var(--text);
+      font-size: 1rem;
+      word-break: break-word;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        padding: 2rem;
+      }
+
+      .contact {
+        padding: 1.5rem 2rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <section class="hero">
+      <div class="hero-header">
+        <div class="hero-title">
+          <p class="tag">Hoja de Vida</p>
+          <h1>Adriana Pérez</h1>
+          <p class="lead">Diseñadora y desarrolladora web con enfoque en experiencias limpias, accesibles y visualmente atractivas.
+          Creando productos digitales claros y memorables para usuarios y marcas.</p>
+        </div>
+      </div>
+
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">UI/UX</span>
+        <span class="tag">Responsive</span>
+      </div>
+
+      <div class="summary">
+        <article class="summary-card">
+          <h2>Sobre mí</h2>
+          <p>Apasionada por el diseño centrado en el usuario y la implementación de interfaces modernas que funcionan bien en cualquier dispositivo.</p>
+        </article>
+        <article class="summary-card">
+          <h2>Experiencia</h2>
+          <p>+3 años creando sitios web, landing pages y prototipos con equilibrio entre forma y función.</p>
+        </article>
+        <article class="summary-card">
+          <h2>Habilidades</h2>
+          <p>Comunicación visual, estrategia digital, maquetación responsive y optimización de performance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contacto</h2>
+      <div class="contact-items">
+        <div class="contact-item">
+          <span>Email</span>
+          <strong>adriana@example.com</strong>
+        </div>
+        <div class="contact-item">
+          <span>Teléfono</span>
+          <strong>+57 300 123 4567</strong>
+        </div>
+        <div class="contact-item">
+          <span>LinkedIn</span>
+          <strong>linkedin.com/in/adriana</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
